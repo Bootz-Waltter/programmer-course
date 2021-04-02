@@ -1,0 +1,18 @@
+title: Programmer
+description: >-
+  still in the learning stage ... please help me to learn it faster . Thanks
+  you 
+template:
+  repo: programmer-template
+  name: programmer
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
